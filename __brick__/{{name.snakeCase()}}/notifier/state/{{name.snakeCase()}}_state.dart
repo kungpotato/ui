@@ -8,7 +8,7 @@ enum {{name.pascalCase()}}Status { init, loading, success, error }
 @freezed
 class {{name.pascalCase()}}State with _${{name.pascalCase()}}State {
   factory {{name.pascalCase()}}State({
-    Failure? error,
+    dynamic error,
     @Default({{name.pascalCase()}}Status.init) {{name.pascalCase()}}Status status,
   }) = _{{name.pascalCase()}}State;
 
